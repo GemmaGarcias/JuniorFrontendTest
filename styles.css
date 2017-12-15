@@ -1,0 +1,136 @@
+body{
+	background-color: #f0f0f0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+/*------------SEARCH CONTAINER-------------*/
+.container{
+	margin: 8% auto;
+	background-color: white;
+	border:1px grey solid;
+	width: 400px;
+	height: auto;
+	padding: 30px;
+	border: solid 1px white;
+	border-radius: 1em;
+	box-shadow: 0px 20px 30px #cccccc;
+	justify-content: center;
+}
+
+.input{
+	border: solid 1px #cccccc;
+	border-radius: 0.2em;
+	padding: 10px;
+	width: 70%;
+	margin-right: 10px;
+}
+
+.buttonSearch{
+	border: solid 1px #cccccc;
+	border-radius: 0.2em;
+	padding: 10px;
+	width: 20%;
+	background-color: #f9f9f9; 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#edeaea));
+}
+
+button:hover {
+	cursor: pointer;
+    background-color: black;
+}
+
+/*------------MAIN INFO PROFILE------------*/
+.mainProfile{
+	display: flex;
+}
+.imgUser{
+	border-radius: 0.2em;
+	margin-top: 15px;
+	width: 25%;
+	height: auto;
+}
+.textInfo{
+	width: 70%;
+	display: inline-block;
+}
+
+.name{
+	margin: inherit;
+	margin-top: 0px;
+	margin-left: 10px;
+	color: #333333;
+}
+.login{
+	margin: inherit;
+	margin-top: 0px;
+	margin-left: 10px;
+	font-style: italic;
+	font-size: 14px;
+	color: #333333;
+}
+.bio{
+	margin: inherit;
+	margin-top: 0px;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #333333;
+}
+
+/*--------REPOSITORIES---------*/
+.repos{
+	color: #333333;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #767676;
+	margin-bottom: 0px;
+}
+
+.lists{
+	margin: inherit;
+	padding: 0px;
+}
+
+.repoList{
+	display: flex;
+	margin-left: 0px;
+	list-style-type: none;
+	padding: 20px 20px;
+	border-bottom: 1px solid #cccccc;
+	color: #222;
+	font-weight: bold;
+	justify-content: space-between;
+}
+.scroll{
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+.divContainpng{
+	padding: 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.stars{
+	display: inline-block;
+	margin:0px;
+}
+
+.forks{
+	display: inline-block;
+	margin: 0px;
+	margin-left: 7px;
+}
+
+/*-------CONTAIN ERROR------*/
+
+.containError{
+	margin-top: 10px;
+	padding: 0px;
+	background-color: #fadede;
+	border: 2px solid #e7d8d8;
+	border-radius: 0.3em;
+}
+.textError{
+	color: #cb2431;
+	font-size: 13px;
+	padding-left: 5px;
+}

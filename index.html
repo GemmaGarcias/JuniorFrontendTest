@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+	<link rel="stylesheet" href="">
     <meta charset="UTF-8">
-    <title>Hello!</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>GitHub</title>
 </head>
 <body>
+	<div class='container' id='demo'>
+		<form action="">
+			<input autofocus id='username' class='input' type="text" name="query" placeholder="Search username...">
+			<button id='searchButton' class='buttonSearch' onSubmit="getUserdata()">Search</button>
+		</form>
+		<div id='containError' class= 'containError' hidden>
+			<p class= 'textError'>Does not exist</p>
+		</div>
+		<div id="infoUser" className='mainProfile'>
+			<div id='containList' hidden>
+				<img id="imgAvatar" class='imgUser' src="" alt="">
+				<div class= 'textInfo'>
+					<p id="userLogin" class='login'></p>
+					<h1 id="userName" class='name'></h1>
+					<p id="userBio" class='bio'></p>
+				</div>
+			</div>
+			<h3 id='repos' class='repos' hidden>Repositories</h3>
+			<div class='scroll'>
+				<ul id='ulRepos' class='lists'></ul>
+			</div>
+		</div>
+	</div>
 
-<h1>Hello!</h1>
+	<!-- SERVICES -->
+	<script src="./services/mainApi.js"></script>
+	<script src= "./github/index.js"></script>
 </body>
 </html>
