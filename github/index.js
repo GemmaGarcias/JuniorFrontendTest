@@ -10,14 +10,14 @@ const getUser=(info)=>{
 	let containList = document.getElementById("containList")
 	let containError = document.getElementById("containError")
      
-    imgAvatar.src = info.avatar_url;
+  imgAvatar.src = info.avatar_url;
 	userName.innerHTML= info.name
 	userLogin.innerHTML= `@${info.login}`
 	userBio.innerHTML = info.bio
 	repos.removeAttribute("hidden")
 	containList.removeAttribute("hidden")
 	containError.setAttribute("hidden","")
-    username = ''
+  username = ''
 }
 
 const getRepositories=(info)=>{
@@ -69,8 +69,8 @@ const getError=()=>{
 }
 
 const removeElementsByClass=()=>{
-    var list = document.getElementsByClassName('repoList');
-    while(list.length > 0){
-        list[0].parentNode.removeChild(list[0]);
-    }
+  var list = document.getElementsByClassName('repoList');
+  while(list.length > 0){
+      list[0].parentNode.removeChild(list[0]);
+  }
 }

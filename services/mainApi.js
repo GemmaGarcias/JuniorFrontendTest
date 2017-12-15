@@ -17,9 +17,8 @@ const getUserdata=()=>{
 	}
 
 const letRepositories=(info)=>{
-		let url = info
-		fetch(url).then(res=>{
-			console.log()
+	let url = info
+	fetch(url).then(res=>{
 		if (res.status !==200){console.log('There was a problem' + res.status)
 		return
 		}
