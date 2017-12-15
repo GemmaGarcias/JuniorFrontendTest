@@ -2,5 +2,5 @@
 
 Link:
 
-![githubchallenge](githubchallenge.surge.sh)
+[githubchallenge](githubchallenge.surge.sh)
 
